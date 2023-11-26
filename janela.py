@@ -14,6 +14,8 @@
 
 # janela.mainloop()
 import customtkinter
+from termcolor import colored
+from tkinter import *
 
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("dark-blue")
@@ -27,7 +29,7 @@ def clique():
 texto = customtkinter.CTkLabel(janela, text="Fazer Login")
 texto.pack(padx=10, pady=10)
 
-email = customtkinter.CTkEntry(janela, placeholder_text="Seu e-mail")
+email = customtkinter.CTkEntry(janela, placeholder_text="Seu e-mail",)
 email.pack(padx=10, pady=10)
 
 senha = customtkinter.CTkEntry(janela, placeholder_text="Sua senha", show="*")
